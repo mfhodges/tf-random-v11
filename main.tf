@@ -32,5 +32,7 @@ output "random" {
 
 
 resource "null_resource" "cluster" {
-  trigger = "test"
+  triggers {
+    cluster_instance_ids = "test"
+  }
 }
